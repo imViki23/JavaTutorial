@@ -84,3 +84,12 @@ david.walk();
 ```
 
 Each object (for example, `john` and `david`) has its own field values but both follow the same `Human` blueprint. The JVM (Earth) executes the methods when those objects perform actions.
+
+## 7. Object pooling
+
+When a program (for example, a long-running Space Rock game) repeatedly creates many short-lived objects, memory usage and garbage-collection pressure can grow significantly. If every new rock spawns as a fresh object and the game runs for a long time, the JVM may spend a lot of time allocating and collecting these objects — in extreme cases leading to high memory usage or even OutOfMemoryError.
+Object pooling solves this by reusing objects instead of constantly allocating new ones. The game keeps a pool (a collection) of inactive `SpaceRock` objects; when a rock is needed it is taken (reused) from the pool and initialized, and when it is no longer needed it is returned to the pool for later reuse. This reduces allocation churn and lowers memory consumption.
+
+Notes:
+- **When to use**: Pooling helps when objects are frequently created/removed and are cheap to reset. For large, complex, or long-lived objects pooling may be unnecessary or harmful.
+- **Trade-offs**: Pooling reduces allocation and GC pressure but adds code complexity and requires careful reset (avoid leaking state). Modern JVMs are efficient at handling short-lived objects, so benchmark your scenario before optimizing.
