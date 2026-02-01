@@ -41,3 +41,5 @@ class Rectangle { // 8 bytes
     int height; // 4 bytes
 }
 ```
+
+![alt text](./assets/class_memory_cell.png)
