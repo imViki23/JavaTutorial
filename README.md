@@ -22,7 +22,7 @@ A memory cell can hold single bit either 0 or 1.
 
 ### Single bit
 
-<table>
+<table style="border: none">
     <tr>
         <td><table><td style="border: 1px solid gray">0</td></table></td>
         <td>represents 0</td>
