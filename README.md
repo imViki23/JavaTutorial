@@ -22,20 +22,16 @@ A memory cell can hold single bit either 0 or 1.
 
 ### Single bit
 
-<div style="display: inline-block">
-    <div>0</div>
-    <div>represents 0</div>
-</div>
-
-<table style="border: none; border-collapse: collapse;">
+<table style="border: 0 !important; border-collapse: collapse !important;">
     <tr>
-        <td style="border: none;"><table style="border: none;"><tr><td style="border: 1px solid gray;">0</td></tr></table></td>
-        <td style="border: none;">represents 0</td>
+        <td style="border: 0 !important; vertical-align: top;"><table style="border: 0 !important;"><tr><td style="border: 1px solid gray; padding: 5px;">0</td></tr></table></td>
+        <td style="border: 0 !important; padding-left: 10px;">represents 0</td>
     </tr>
 </table>
-<table style="border: none; border-collapse: collapse;">
+
+<table style="border: 0 !important; border-collapse: collapse !important;">
     <tr>
-        <td style="border: none;"><table style="border: none;"><tr><td style="border: 1px solid gray;">1</td></tr></table></td>
-        <td style="border: none;">represents 1</td>
+        <td style="border: 0 !important; vertical-align: top;"><table style="border: 0 !important;"><tr><td style="border: 1px solid gray; padding: 5px;">1</td></tr></table></td>
+        <td style="border: 0 !important; padding-left: 10px;">represents 1</td>
     </tr>
 </table>
