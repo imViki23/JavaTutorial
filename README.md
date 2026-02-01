@@ -30,7 +30,7 @@ A memory cell can hold single bit either 0 or 1.
 </table>
 <table>
     <tr>
-        <td><table><td style="border: 1px solid gray">1</td></table></td>
+        <td><table><td>1</td></table></td>
         <td>represents 1</td>
     </tr>
 </table>
