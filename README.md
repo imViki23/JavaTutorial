@@ -23,7 +23,7 @@ A memory cell can hold single bit either 0 or 1.
 ### Single bit
 
 <span>
-    <table><td style="border: 1px solid gray;">0</td></table>
+    <span><table><td style="border: 1px solid gray;">0</td></table></span>
     <span>represents 0</span>
 </span>
 <table style="border: none; border-collapse: collapse;">
