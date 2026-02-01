@@ -20,15 +20,16 @@
 
 A memory cell can hold single bit either 0 or 1.
 
-### Single bit
+![alt text](./assets/memory_cell.png)
 
-<span>
-    <span><table><td style="border: 1px solid gray;">0</td></table></span>
-    <span>represents 0</span>
-</span>
-<table style="border: none; border-collapse: collapse;">
-    <tr>
-        <td style="border: none;"><table style="border: none;"><tr><td style="border: 1px solid gray;">1</td></tr></table></td>
-        <td style="border: none;">represents 1</td>
-    </tr>
-</table>
+## 4. Primitive Data Types
+
+- **Description**: Java has several primitive data types for storing different kinds of values. These are the basic building blocks for data in Java programs.
+
+| Data Type | Size (bits) | Size (bytes) | Range |
+|-----------|-------------|--------------|-------|
+| int      | 32         | 4           | -2,147,483,648 to 2,147,483,647 |
+| float    | 32         | 4           | Approximately ±3.4028235E+38 |
+| long     | 64         | 8           | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| double   | 64         | 8           | Approximately ±1.7976931348623157E+308 |
+

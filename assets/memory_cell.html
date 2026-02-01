@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Bits Representation</title>
+    <style>
+        .bit-box {
+            border: 1px solid gray;
+            display: inline-block;
+            padding: 5px;
+            margin: 0;
+            font-family: monospace;
+        }
+
+        .container {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style="margin: 20px;">
+                <h2>Single Bit</h2>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 0</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 1</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin: 20px;">
+                <h2>Two Bits</h2>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 0</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 1</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 2</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 3</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin: 20px;">
+                <h2>Three Bits</h2>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 0</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 1</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 2</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 3</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 4</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 5</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 6</td>
+                    </tr>
+                    <tr>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">1</td>
+                        <td style="padding-left: 10px;">represents 7</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style="margin: 20px;">
+                <h2>One Byte (8 Bits)</h2>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td style="padding-left: 10px;">represents 0 (all bits 0)</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin: 20px;">
+                <h2>32-Bit Memory Block (for int, number 4)</h2>
+                <table style="border-collapse: collapse; display: inline-table;">
+                    <tr>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">1</td>
+                        <td class="bit-box">0</td>
+                        <td class="bit-box">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
