@@ -45,6 +45,7 @@ class Rectangle { // 8 bytes
 ![alt text](./assets/class_memory_cell.png)
 
 ## 6. Class and Object
+
 A class is a blueprint; an object is a concrete instance created from that blueprint.
 
 - **Analogy**: Think of `Human` as the class (the blueprint), `Earth` as the JVM (the environment where objects run), and `john` or `david` as objects (instances) of the `Human` class living on the Earth (JVM).
@@ -52,6 +53,7 @@ A class is a blueprint; an object is a concrete instance created from that bluep
 - **Two components of a class**:
     - **Fields (properties)**: describe the state or characteristics. Example for `Human`: `eyes`, `legs` — these are fields that store data for each object.
     - **Methods (actions)**: define behavior or actions the class can perform. Example for `Human`: `walk()` — an action a Human can do.
+    - **Constructor**: a special method used to initialize an object's fields when it is created. It's invoked when you call `new`, for example `new Human(2, 2)`. If you don't define any constructor, Java provides a default no-argument constructor. Inside a constructor you often use `this` to refer to the current object's fields (e.g., `this.eyes = eyes;`).
 
 Example in Java:
 
