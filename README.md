@@ -22,6 +22,11 @@ A memory cell can hold single bit either 0 or 1.
 
 ### Single bit
 
+<div style="display: flex">
+    <div>0</div>
+    <div>represents 0</div>
+</div>
+
 <table style="border: none; border-collapse: collapse;">
     <tr>
         <td style="border: none;"><table style="border: none;"><tr><td style="border: 1px solid gray;">0</td></tr></table></td>
