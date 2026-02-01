@@ -33,3 +33,11 @@ A memory cell can hold single bit either 0 or 1.
 | long     | 64         | 8           | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
 | double   | 64         | 8           | Approximately ±1.7976931348623157E+308 |
 
+## 5. Understanding class memory
+
+```java
+class Rectangle { // 8 bytes
+    int width; // 4 bytes
+    int height; // 4 bytes
+}
+```
