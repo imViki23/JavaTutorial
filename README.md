@@ -43,3 +43,42 @@ class Rectangle { // 8 bytes
 ```
 
 ![alt text](./assets/class_memory_cell.png)
+
+## 6. Class and Object
+A class is a blueprint; an object is a concrete instance created from that blueprint.
+
+- **Analogy**: Think of `Human` as the class (the blueprint), `Earth` as the JVM (the environment where objects run), and `john` or `david` as objects (instances) of the `Human` class living on the Earth (JVM).
+
+- **Two components of a class**:
+    - **Fields (properties)**: describe the state or characteristics. Example for `Human`: `eyes`, `legs` — these are fields that store data for each object.
+    - **Methods (actions)**: define behavior or actions the class can perform. Example for `Human`: `walk()` — an action a Human can do.
+
+Example in Java:
+
+```java
+class Human {
+    int eyes; // field: property (how many eyes)
+    int legs; // field: property (how many legs)
+
+    Human(int eyes, int legs) {
+        this.eyes = eyes;
+        this.legs = legs;
+    }
+
+    void walk() {
+        if (legs == 1) {
+            System.out.println("Can't walk");
+        } else {
+            System.out.println("Walking");
+        }
+    }
+}
+
+// Objects (instances) running on the Earth (the JVM)
+Human john = new Human(2, 1);
+Human david = new Human(2, 2);
+john.walk();
+david.walk();
+```
+
+Each object (for example, `john` and `david`) has its own field values but both follow the same `Human` blueprint. The JVM (Earth) executes the methods when those objects perform actions.
